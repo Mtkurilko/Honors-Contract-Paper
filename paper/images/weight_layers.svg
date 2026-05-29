@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1180" viewBox="0 0 1400 1180">
+  <defs>
+    <style>
+      .title{font:700 36px Arial, sans-serif; fill:#111}
+      .label{font:700 30px Arial, sans-serif; fill:#111}
+      .small{font:700 20px Arial, sans-serif; fill:#333}
+      .frame{fill:#ffffff; stroke:#334155; stroke-width:3; rx:18; ry:18}
+      .green{fill:#dcfce7; stroke:#15803d; stroke-width:3}
+      .blue{fill:#dbeafe; stroke:#2563eb; stroke-width:3}
+      .amber{fill:#fef3c7; stroke:#d97706; stroke-width:3}
+      .red{fill:#fee2e2; stroke:#dc2626; stroke-width:3}
+      .line{stroke:#444; stroke-width:4; fill:none; marker-end:url(#m)}
+    </style>
+    <marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#444"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="70" y="70" class="title">Weight Categories and Trust Factors</text>
+
+  <rect x="90" y="130" width="1220" height="970" class="frame"/>
+
+  <rect x="150" y="190" width="280" height="170" class="green" rx="16" ry="16"/>
+  <text x="290" y="265" text-anchor="middle" class="label">strong edge</text>
+  <text x="290" y="305" text-anchor="middle" class="small">high-cost</text>
+  <text x="290" y="338" text-anchor="middle" class="small">endorsement</text>
+
+  <rect x="150" y="400" width="280" height="180" class="blue" rx="16" ry="16"/>
+  <text x="290" y="470" text-anchor="middle" class="label">independent</text>
+  <text x="290" y="508" text-anchor="middle" class="label">source</text>
+  <text x="290" y="545" text-anchor="middle" class="small">separate cluster</text>
+  <text x="290" y="578" text-anchor="middle" class="small">boosts value</text>
+
+  <rect x="150" y="620" width="280" height="170" class="amber" rx="16" ry="16"/>
+  <text x="290" y="690" text-anchor="middle" class="label">recency</text>
+  <text x="290" y="730" text-anchor="middle" class="small">fresh trust</text>
+  <text x="290" y="763" text-anchor="middle" class="small">weighs more</text>
+
+  <rect x="150" y="830" width="280" height="170" class="red" rx="16" ry="16"/>
+  <text x="290" y="900" text-anchor="middle" class="label">penalty</text>
+  <text x="290" y="940" text-anchor="middle" class="small">contradiction /</text>
+  <text x="290" y="973" text-anchor="middle" class="small">duplication</text>
+
+  <path d="M430 275 L560 275" class="line"/>
+  <path d="M430 490 L560 490" class="line"/>
+  <path d="M430 705 L560 705" class="line"/>
+  <path d="M430 915 L560 915" class="line"/>
+
+  <rect x="560" y="170" width="520" height="930" class="frame"/>
+  <text x="820" y="225" text-anchor="middle" class="label">How the weights combine</text>
+  <text x="590" y="295" class="small">1. Weak edges are allowed, but add little.</text>
+  <text x="590" y="355" class="small">2. Strong edges matter more</text>
+  <text x="620" y="390" class="small">because they cost more.</text>
+  <text x="590" y="450" class="small">3. Independent sources matter more than repeats.</text>
+  <text x="590" y="510" class="small">4. Recency can be used when pace is high.</text>
+  <text x="590" y="570" class="small">5. Contradiction and duplication subtract trust.</text>
+  <text x="590" y="630" class="small">6. Score tracks legitimacy, not popularity.</text>
+  <text x="590" y="715" class="small">V(u) = sum(weighted endorsements)</text>
+  <text x="590" y="755" class="small">       - penalty(u)</text>
+
+  <rect x="1110" y="170" width="180" height="930" class="frame"/>
+  <text x="1200" y="225" text-anchor="middle" class="label">Example</text>
+  <text x="1200" y="305" text-anchor="middle" class="small">coworker</text>
+  <text x="1200" y="355" text-anchor="middle" class="small">family</text>
+  <text x="1200" y="405" text-anchor="middle" class="small">peer</text>
+  <text x="1200" y="455" text-anchor="middle" class="small">celebrity</text>
+  <text x="1200" y="565" text-anchor="middle" class="small">Only first</text>
+  <text x="1200" y="605" text-anchor="middle" class="small">three are</text>
+  <text x="1200" y="645" text-anchor="middle" class="small">high-value</text>
+  <text x="1200" y="685" text-anchor="middle" class="small">for verify.</text>
+</svg>
